@@ -3,12 +3,22 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Provider } from 'react-redux'
+import {Store} from './redux/cakes/Store';
+import HookApp from './HookApp';
+
+//const root = () => document.getElementById('root')
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+ 
+    <Provider store = {Store} > 
+    <React.StrictMode>
+      <App />
+      <HookApp/>
+      </React.StrictMode>
+    </Provider>,
   document.getElementById('root')
+  
 );
 
 // If you want to start measuring performance in your app, pass a function
