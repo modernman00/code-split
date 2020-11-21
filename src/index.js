@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux'
 import {Store} from './redux/cakes/Store';
 import HookApp from './HookApp';
+//import Counter from './components/UseReducer.js/CounterOne';
 
 //const root = () => document.getElementById('root')
 
@@ -20,6 +21,7 @@ ReactDOM.render(
   document.getElementById('root')
   
 );
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
